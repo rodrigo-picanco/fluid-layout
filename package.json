@@ -1,0 +1,46 @@
+{
+  "name": "react-async-renderer",
+  "version": "0.0.4",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "stories": "start-storybook  -p 9009 -s public",
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "dependencies": {
+    "@storybook/react": "^5.3.18",
+    "mayre": "^4.0.0",
+    "polished": "^3.5.2",
+    "ramda": "^0.27.0",
+    "storybook": "^5.3.18",
+    "styled-components": "^5.1.0",
+    "styled-tools": "^1.7.1"
+  },
+  "peerDependencies": {
+    "ramda": "^0.27.0",
+    "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "@storybook/addon-centered": "^5.3.18",
+    "@storybook/addon-docs": "^5.3.18",
+    "@types/ramda": "^0.27.4",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.6",
+    "@types/styled-components": "^5.1.0",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.1.0",
+    "jest": "^25.4.0",
+    "react-is": "^16.13.1",
+    "rollup": "^2.7.2",
+    "rollup-plugin-typescript2": "^0.27.0",
+    "ts-loader": "^7.0.1",
+    "typescript": "^3.8.3"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "async",
+    "monad"
+  ]
+}
