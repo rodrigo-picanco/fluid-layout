@@ -10,9 +10,9 @@ export default {
       format: 'cjs',
       exports: 'named',
       sourcemap: true,
-      strict: false,
-    },
+      strict: false
+    }
   ],
   plugins: [typescript()],
-  external: ['react', 'react-dom'],
+  external: ['react', 'react-dom']
 }

@@ -3,6 +3,8 @@ import { create } from '@storybook/theming'
 import centered from '@storybook/addon-centered/react'
 
 const theme = create({
+  fontBase: 'mono',
+  fontCode: 'mono'
   //   url: 'https://mysite.pe'
 })
 
