@@ -1,6 +1,6 @@
 # Fluid
 
-[Check out the demo](https://elated-feynman-68280d.netlify.app/index.html)
+[Check out the components](https://elated-feynman-68280d.netlify.app/index.html)
 
 Your goto instrinsic layout styled components
 
