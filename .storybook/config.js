@@ -4,8 +4,8 @@ import centered from '@storybook/addon-centered/react'
 
 const theme = create({
   fontBase: 'mono',
-  fontCode: 'mono'
-  //   url: 'https://mysite.pe'
+  fontCode: 'mono',
+  url: 'https://github.com/rodrigo-picanco/fluid-layout/'
 })
 
 addParameters({
