@@ -1,7 +1,7 @@
 # Fluid
 Your goto instrinsic layout styled components
 
-- `yarn add fluid`
-- `npm i fluid`
+- `yarn add fluid-layout`
+- `npm i fluid-layout`
 
 
