@@ -1,0 +1,22 @@
+import { Meta, Story, Props } from '@storybook/addon-docs/blocks'
+import { Sidebar } from './sidebar'
+import { Box } from '../box'
+
+<Meta title="The Sidebar" />
+
+## Sidebar
+
+The `Sidebar` will blow your mind. Keep the content flowing, the sidebar chill, untill it breaks!
+
+<Story name="Normal">
+  <Sidebar gutter="1rem" side="left" minWidth="30ch">
+    <Box>
+      <Box border="2px solid black" padding="1rem">
+        Content
+      </Box>
+      <Box border="2px solid black" padding="1rem">
+        Sidebar
+      </Box>
+    </Box>
+  </Sidebar>
+</Story>

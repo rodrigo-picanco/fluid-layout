@@ -1,0 +1,28 @@
+import { Meta, Story, Props } from '@storybook/addon-docs/blocks'
+import { Switcher } from './switcher'
+import { Box } from '../box'
+
+<Meta title="The Switcher" />
+
+## Switcher
+
+The `Switcher` will horizontally space as many childs as you want, untill it wont.
+
+<Story name="Normal">
+  <Switcher space="1rem" threshold="50%" limit={5}>
+    <Box>
+      <Box border="2px solid black" padding="1rem">
+        Content
+      </Box>
+      <Box border="2px solid black" padding="1rem">
+        Content
+      </Box>
+      <Box border="2px solid black" padding="1rem">
+        Content
+      </Box>
+      <Box border="2px solid black" padding="1rem">
+        Content
+      </Box>
+    </Box>
+  </Switcher>
+</Story>
