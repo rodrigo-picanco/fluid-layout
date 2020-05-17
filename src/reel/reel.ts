@@ -11,10 +11,7 @@ export const Reel = styled.div<ReelProps>`
   ${ifProp(
     'styleScrollbar',
     css`
-      scrollbar-color: ${prop(
-          'styleScrollbar.styleScrollbar.trackColor',
-          '#fff'
-        )}
+      scrollbar-color: ${prop('styleScrollbar.styleScrollbar.trackColor', '#fff')}
         ${prop('styleScrollbar.styleScrollbar.thumbColor', '#000')};
 
       &::-webkit-scrollbar {

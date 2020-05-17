@@ -6,26 +6,29 @@ import { prop, switchProp, ifNotProp } from 'styled-tools'
 import { SidebarProps } from './interface'
 
 export const Sidebar = styled.div<SidebarProps>`
-  overflow: hidden;
+  --gutter: ${prop('gutter', '0px')};
+  --margin: calc(var(--gutter) / 2);
+  --side-width: ${prop('sideWidth')};
+  --min-content-width: calc(${prop('contentMin')} - var(--gutter));
+
+  overflow: ${ifNotProp('overflow', 'hidden')};
 
   & > * {
     display: flex;
     flex-wrap: wrap;
-    align-items: ${ifNotProp('noStretch', 'stretch')};
-    margin: calc(${prop('gutter')} / 2 * -1);
+    align-items: ${ifNotProp('noStretch', 'stretch', 'flex-start')};
+    margin: calc(var(--margin) * -1);
   }
 
   & > * > * {
-    margin: calc(${prop('gutter')} / 2);
-    flex-basis: ${prop('minWidth')};
+    margin: var(--margin);
+    flex-basis: var(--side-width);
     flex-grow: 1;
   }
 
-  &
-    > *
-    > ${switchProp('side', { left: ':first-child', right: ':last-child' })} {
+  & > * > ${switchProp('side', { left: ':first-child', right: ':last-child' })} {
     flex-basis: 0;
     flex-grow: 999;
-    min-width: calc(${prop('minContent')} - ${prop('gutter')});
+    min-width: var(--min-content-width);
   }
 `

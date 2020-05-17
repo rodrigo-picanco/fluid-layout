@@ -12,7 +12,7 @@ export const Center = styled.div<CenterProps>`
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  max-width: 60ch;
+  max-width: ${prop('maxWidth')};
   padding-left: ${prop('gutter')};
   padding-right: ${prop('gutter')};
 `
