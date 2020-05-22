@@ -7,5 +7,6 @@ module.exports = {
         configureJSX: true,
       },
     },
+    '@storybook/addon-viewport/register'
   ],
 }
