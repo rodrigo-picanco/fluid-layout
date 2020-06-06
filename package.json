@@ -1,6 +1,6 @@
 {
   "name": "fluid-layout",
-  "version": "0.0.333",
+  "version": "0.0.4",
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
