@@ -2,7 +2,7 @@
 import styled from 'styled-components'
 import { prop } from 'styled-tools'
 // Types
-import { StackProps } from './interface'
+import { StackProps, StackSplitProps } from './interface'
 
 export const Stack = styled.div<StackProps>`
   & {
@@ -19,6 +19,7 @@ export const Stack = styled.div<StackProps>`
     margin-top: ${prop('space')};
   }
 `
-export const StackSplit = styled.div`
+export const StackSplit = styled.div<StackSplitProps>`
   margin-top: auto;
+  padding-top: ${prop('space')};
 `

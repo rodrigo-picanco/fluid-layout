@@ -7,4 +7,5 @@ export interface SidebarProps {
   contentMin?: CSS.MinWidthProperty<1>
   noStretch?: boolean
   overflow?: boolean
+  align?: CSS.AlignItemsProperty
 }

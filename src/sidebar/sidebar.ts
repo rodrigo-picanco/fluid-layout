@@ -16,7 +16,7 @@ export const Sidebar = styled.div<SidebarProps>`
   & > * {
     display: flex;
     flex-wrap: wrap;
-    align-items: ${ifNotProp('noStretch', 'stretch', 'flex-start')};
+    align-items: ${ifNotProp('noStretch', 'stretch', prop('align', 'flex-start'))};
     margin: calc(var(--margin) * -1);
   }
 

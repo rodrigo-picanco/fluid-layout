@@ -8,6 +8,6 @@ export const Grid = styled.div<GridProps>`
   grid-gap: ${prop('gutter')};
 
   @supports (width: min(${prop('min')}, 100%)) {
-    grid-template-columns: repeat(auto-fit, minmax(min(calc(${prop('min')} - (${prop('gutter')} / 2)), 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(${prop('min')}, 100%), 1fr));
   }
 `
