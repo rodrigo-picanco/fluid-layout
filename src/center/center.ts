@@ -5,6 +5,11 @@ import { prop } from 'styled-tools'
 // Types
 import { CenterProps } from './interface'
 
+/**
+ * The Center is used to horizontally centralize stuff.
+ * It can receive two props, gutter and maxWidth.
+ * These props affect the component itself, not it's children.
+ */
 export const Center = styled.div<CenterProps>`
   align-items: center;
   box-sizing: content-box;

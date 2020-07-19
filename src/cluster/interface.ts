@@ -4,6 +4,6 @@ export interface ClusterProps {
   noWrap?: boolean
   align?: CSS.AlignItemsProperty
   justify?: CSS.JustifyContentProperty
-  space: CSS.MarginProperty<1>
+  space?: CSS.MarginProperty<1>
   showOverflow?: boolean
 }
