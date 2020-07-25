@@ -14,6 +14,6 @@ export const Box = styled.div<BoxProps>`
     theme('colors.background', '#fff')
   )};
   color: ${prop('color', theme('colors.color', '#000'))};
-  padding: ${prop('padding', '1rem')};
+  padding: ${prop('padding')};
   border: ${prop('border')};
 `
