@@ -2,7 +2,17 @@ version: 2.1
 orbs:
   node: circleci/node@1.1.6
 jobs:
-  build-and-test:
+  test: 
+     executor:
+      name: node/default
+    steps:
+      - checkout
+      - node/with-cache:
+          steps:
+            - run: yarn install
+            - run: yarn bootstrap 
+
+  build:
     executor:
       name: node/default
     steps:
@@ -10,8 +20,12 @@ jobs:
       - node/with-cache:
           steps:
             - run: yarn install
+            - run: yarn bootstrap 
             - run: yarn publish
 workflows:
-    build-and-test:
+    build:
       jobs:
-        - build-and-test
+        - test
+        - build:
+            requires:
+              - test
