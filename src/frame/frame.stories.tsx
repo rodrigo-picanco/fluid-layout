@@ -7,7 +7,12 @@ import { Frame } from '../frame'
 
 export default {
   title: 'Frame',
-  component: Frame
+  component: Frame,
+  decorators: [
+    (fn: any) => {
+      return <div style={{ maxWidth: `25vw` }}>{fn()}</div>
+    }
+  ]
 }
 
 export const NeverWorryAboutImageAspectRatioAnymore = () => (
