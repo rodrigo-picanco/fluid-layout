@@ -1,7 +1,13 @@
+// Packages
 import styled from 'styled-components'
-import { ClusterProps } from './interface'
 import { ifNotProp, prop } from 'styled-tools'
 
+// Types
+import { ClusterProps } from './interface'
+
+/**
+ * The Cluster is the last flex grid you'll ever need. It can receive up to five props. ;?
+ */
 export const Cluster = styled.div<ClusterProps>`
   overflow: ${ifNotProp('showOverflow', 'hidden')};
 
