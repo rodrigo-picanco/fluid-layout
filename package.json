@@ -21,21 +21,14 @@
     "@storybook/addon-viewport": "^5.3.18",
     "@storybook/react": "^5.3.18",
     "@types/react": "^16.9.34",
-    "@types/react-dom": "^16.9.6",
     "@types/styled-components": "^5.1.0",
-    "babel": "^6.23.0",
     "babel-loader": "^8.1.0",
-    "css-loader": "^3.6.0",
-    "jest": "^25.4.0",
     "react-docgen-typescript-loader": "^3.7.2",
-    "react-docgen-typescript-webpack-plugin": "^1.1.0",
-    "react-is": "^16.13.1",
     "rollup": "^2.7.2",
     "rollup-plugin-typescript2": "^0.27.0",
     "storybook": "^5.3.18",
-    "styled-loader": "^0.0.0",
-    "ts-loader": "^7.0.1",
-    "typescript": "^3.8.3"
+    "ts-loader": "^8.0.1",
+    "typescript": "^3.9.7"
   },
   "keywords": [
     "react",
