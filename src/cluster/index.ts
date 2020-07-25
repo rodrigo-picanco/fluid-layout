@@ -1,2 +1,1 @@
-export * from './cluster'
-export * from './interface'
+export { Cluster } from './cluster'

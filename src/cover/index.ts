@@ -1,2 +1,1 @@
-export * from './cover'
-export * from './interface'
+export { Cover } from './cover'

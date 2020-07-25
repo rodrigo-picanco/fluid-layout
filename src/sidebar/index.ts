@@ -1,2 +1,1 @@
-export * from './sidebar'
-export * from './interface'
+export { Sidebar } from './sidebar'

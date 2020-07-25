@@ -1,2 +1,1 @@
-export * from './grid'
-export * from './interface'
+export { Grid } from './grid'
