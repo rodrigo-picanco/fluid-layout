@@ -5,7 +5,7 @@
     "lerna": "^3.22.1"
   },
   "scripts": {
-    "bootstrap":"lerna bootstrap",
-    "publish": "lerna publish --yes"
+    "lerna:bootstrap":"lerna bootstrap",
+    "lerna:publish": "lerna publish --yes"
   }
 }
