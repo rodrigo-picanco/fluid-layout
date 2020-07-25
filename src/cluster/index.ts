@@ -1,1 +1,1 @@
-export * from './cluster'
+export { Cluster } from './cluster'

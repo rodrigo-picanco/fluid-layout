@@ -1,1 +1,1 @@
-export * from './cover'
+export { Cover } from './cover'

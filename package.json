@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "styled-components": "^5.1.0",
-    "styled-tools": "^1.7.1"
+    "styled-tools": "^1.7.2"
   },
   "peerDependencies": {
     "react": "^16.13.1"
@@ -23,6 +23,7 @@
     "@types/react": "^16.9.34",
     "@types/styled-components": "^5.1.0",
     "babel-loader": "^8.1.0",
+    "csstype": "^2.6.11",
     "react-docgen-typescript-loader": "^3.7.2",
     "rollup": "^2.7.2",
     "rollup-plugin-typescript2": "^0.27.0",

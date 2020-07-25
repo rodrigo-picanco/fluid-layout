@@ -1,2 +1,1 @@
-export * from './frame'
-export * from './interface'
+export { Frame } from './frame'
