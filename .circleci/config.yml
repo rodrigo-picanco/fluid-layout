@@ -15,6 +15,11 @@ jobs:
     executor: node/default
     steps:
       - checkout
+      - attach_workspace:
+          at: ~/repo
+      - run:
+          name: Authenticate with registry
+          command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
       - node/with-cache:
           steps:
             - run: yarn install
