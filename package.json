@@ -6,6 +6,6 @@
   },
   "scripts": {
     "lerna:bootstrap":"lerna bootstrap",
-    "lerna:publish": "lerna publish --yes"
+    "lerna:publish": "lerna publish from-package --yes"
   }
 }
