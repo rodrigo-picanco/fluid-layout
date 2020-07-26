@@ -2,6 +2,7 @@
   "name": "fluid-layout",
   "version": "0.1.0",
   "main": "dist/index.js",
+  "repository": "github.com/rodrigo-picanco/fluid-layout",
   "license": "MIT",
   "scripts": {
     "stories": "start-storybook   -p 9009 -s public",
