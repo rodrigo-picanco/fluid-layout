@@ -2,7 +2,6 @@
 # Fluid
 [![rodrigo-picanco](https://circleci.com/gh/rodrigo-picanco/fluid-layout.svg?style=svg)](https://app.circleci.com/pipelines/github/rodrigo-picanco/fluid-layout)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
-[![bundle](https://badgen.net/bundlephobia/minzip/fluid-layout)](https://bundlephobia.com/result?p=fluid-layout)
 
 
 [Check out the components](https://elated-feynman-68280d.netlify.app/index.html)
