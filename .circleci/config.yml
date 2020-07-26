@@ -1,34 +1,56 @@
-version: 2.1
-orbs:
-  node: circleci/node@1.1.6
-jobs:
-  test: 
-    executor: node/default
-    steps:
-      - checkout
-      - node/with-cache:
-          steps:
-            - run: yarn install
-            - run: yarn lerna:bootstrap 
+version: 2
 
-  build:
-    executor: node/default
+defaults: &defaults
+  working_directory: ~/repo
+  docker:
+    - image: circleci/node:stretch
+jobs:
+  test:
+    <<: *defaults  
     steps:
       - checkout
+
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-
+
+      - run: yarn install
+      - run: yarn lerna:bootstrap 
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+      - persist_to_workspace:
+          root: ~/repo
+          paths: .
+  deploy:
+    <<: *defaults
+    steps:
       - attach_workspace:
           at: ~/repo
       - run:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
-      - node/with-cache:
-          steps:
-            - run: yarn install
-            - run: yarn lerna:bootstrap 
-            - run: yarn lerna:publish
+      - run:
+          name: Publish package
+          command: yarn lerna:publish
+            
 workflows:
-    build:
-      jobs:
-        - test
-        - build:
-            requires:
-              - test
+  version: 2
+  test-deploy:
+    jobs:
+      - test:
+          filters:
+            tags:
+              only: /^v.*/
+      - deploy:
+          requires:
+            - test
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
