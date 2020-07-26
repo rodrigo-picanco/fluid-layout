@@ -23,5 +23,5 @@ Your goto instrinsic layout react styled components
 - [Mockfy - A fake Spotify made with this lib](https://glitch.com/~mockfy)
 
 ## Inspiration
-[every layout](https://every-layout.dev/)
-[layout land](https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag)
+- [every layout](https://every-layout.dev/)
+- [layout land](https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag)
