@@ -1,0 +1,19 @@
+{
+  "plugins": [
+    ["semantic-release-lerna", { "generateNotes": true }],
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "CHANGELOG.md",
+          "lerna.json",
+          "package.json",
+          "package-lock.json",
+          "lerna.json",
+          "packages/*/package.json",
+          "packages/*/package-lock.json"
+        ]
+      }
+    ]
+  ]
+}

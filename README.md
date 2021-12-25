@@ -1,15 +1,13 @@
 
-# Fluid
-[![rodrigo-picanco](https://circleci.com/gh/rodrigo-picanco/fluid-layout.svg?style=svg)](https://app.circleci.com/pipelines/github/rodrigo-picanco/fluid-layout)
+# Fluid layout
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
-
-Your goto instrinsic layout react styled components
+CSS library for responsive components without media queries. 
 
 
 ## Docs
 
-[Storybook](https://elated-feynman-68280d.netlify.app/index.html)
+[Storybook](https://fluid-layout.netlify.app/index.html)
 
 
 ## Install 
