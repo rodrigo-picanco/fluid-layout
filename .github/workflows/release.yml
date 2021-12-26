@@ -26,8 +26,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
           always-auth: true
       - run: |
-          git config --global user.name '${GITHUB_ACTOR}'
-          git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
+          git config --global user.name '${{GITHUB_ACTOR}}'
+          git config --global user.email '${{GITHUB_ACTOR}}@users.noreply.github.com'
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           GITHUB_ACTOR: ${{ github.actor }}
