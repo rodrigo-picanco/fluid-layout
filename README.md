@@ -1,17 +1,13 @@
-
-# Fluid layout
+# 🌊Fluid layout
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
 CSS library for responsive components without media queries. 
-
 
 ## Docs
 
 [Storybook](https://fluid-layout.netlify.app/index.html)
 
-
 ## Install 
-
 - `yarn add fluid-layout`
 - `npm i fluid-layout`
 
