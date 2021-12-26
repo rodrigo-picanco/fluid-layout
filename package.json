@@ -5,7 +5,7 @@
     "lerna": "^3.22.1"
   },
   "scripts": {
-    "lerna:version": "lerna version --conventional-commits -y",
+    "lerna:version": "lerna version --conventional-commits -y -m 'chore(release): publish %s'",
     "lerna:bootstrap": "lerna bootstrap",
     "lerna:publish": "lerna publish from-package --yes --no-verify-access"
   }
