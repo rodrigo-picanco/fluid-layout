@@ -1,5 +1,5 @@
 {
-  "name": "@fluid/styled-components",
+  "name": "@fluid-layout/styled-components",
   "version": "0.1.3",
   "main": "dist/index.js",
   "repository": "github.com/rodrigo-picanco/fluid-layout",
@@ -10,13 +10,13 @@
     "start": "rollup -c -w"
   },
   "dependencies": {
-    "styled-components": "^5.1.0",
-    "styled-tools": "^1.7.2"
+    "styled-components": "^5.1.0"
   },
   "peerDependencies": {
     "react": "^16.13.1"
   },
   "devDependencies": {
+    "styled-tools": "^1.7.2",
     "@storybook/addon-info": "^5.3.19",
     "@storybook/addon-knobs": "^5.3.19",
     "@storybook/addon-viewport": "^5.3.18",
@@ -35,5 +35,8 @@
   "keywords": [
     "react",
     "typescript"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
