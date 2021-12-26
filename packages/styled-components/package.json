@@ -1,6 +1,6 @@
 {
   "name": "@fluid-layout/styled-components",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "repository": "github.com/rodrigo-picanco/fluid-layout",
   "license": "MIT",
@@ -16,7 +16,6 @@
     "react": "^16.13.1"
   },
   "devDependencies": {
-    "styled-tools": "^1.7.2",
     "@storybook/addon-info": "^5.3.19",
     "@storybook/addon-knobs": "^5.3.19",
     "@storybook/addon-viewport": "^5.3.18",
@@ -29,6 +28,7 @@
     "rollup": "^2.7.2",
     "rollup-plugin-typescript2": "^0.27.0",
     "storybook": "^5.3.18",
+    "styled-tools": "^1.7.2",
     "ts-loader": "^8.0.1",
     "typescript": "^3.9.7"
   },
