@@ -1,0 +1,17 @@
+{
+  "name": "@fluid-layout/css",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "repository": "github.com/rodrigo-picanco/fluid-layout",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "keywords": [
+    "react",
+    "typescript"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
