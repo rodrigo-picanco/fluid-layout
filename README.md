@@ -12,12 +12,11 @@ CSS library for responsive components without media queries.
 ## Install 
 
 ### CSS
-`<link rel="stylesheet" url="unpkg.com/@fluid-layout/css/src/index.css">`
+`<link rel="stylesheet" url="https://unpkg.com/@fluid-layout/css/src/index.css">`
 
 ### Styled Components
 - `yarn add fluid-layout`
 - `npm i fluid-layout`
-
 
 ## Examples
 
