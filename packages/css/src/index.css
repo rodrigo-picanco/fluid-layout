@@ -1,0 +1,97 @@
+.box {
+  padding: 1rem;
+}
+
+.center { 
+  align-items: center;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cluster > *{
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(1rem / 2 * -1);
+} 
+
+.cluster > * > * {
+  margin: calc(1rem / 2);
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.cover > :first-child:not(.centered') {
+  margin-top: 0;
+}
+
+.cover > :last-child:not(.centered') {
+  margin-bottom: 0;
+}
+
+.cover > '.centered' {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+/* TODO: find a way to comunicate this */
+@supports (width: min(30ch), 100%)) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(30ch, 100%), 1fr));
+  }
+}
+
+.sidebar > * {
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(1rem / 2 * -1);
+}
+
+/* TODO: find a way to pass this props*/
+.sidebar > * > * {
+    flex-basis: 300px;
+    flex-grow: 1;
+    margin: calc(1rem / 2);
+}
+
+.sidebar > * > :first-child {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: calc(30ch - 1rem);
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.stack > * + * {
+  margin-top: 1rem;
+}
+
+/**
+ * The StackSplit breaks the stack and flows forces itself and everything above to the end of the Stack. Pass the space prop to have a min space between the items above
+ */
+.stack--split {
+  margin-top: auto;
+  padding-top: 1rem;
+}

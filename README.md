@@ -5,9 +5,16 @@ CSS library for responsive components without media queries.
 
 ## Docs
 
+### Styled Components
+
 [Storybook](https://fluid-layout.netlify.app/index.html)
 
 ## Install 
+
+### CSS
+`<link rel="stylesheet" url="unpkg.com/@fluid-layout/css/src/index.css">`
+
+### Styled Components
 - `yarn add fluid-layout`
 - `npm i fluid-layout`
 
