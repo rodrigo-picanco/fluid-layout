@@ -1,6 +1,6 @@
 {
   "name": "@fluid-layout/styled-components",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/index.js",
   "repository": "github.com/rodrigo-picanco/fluid-layout",
   "license": "MIT",
