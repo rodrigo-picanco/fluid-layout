@@ -2,7 +2,7 @@
   "name": "root",
   "private": false,
   "devDependencies": {
-    "lerna": "^3.22.1"
+    "lerna": "^6.4.0"
   },
   "scripts": {
     "lerna:version": "lerna version --conventional-commits -y -m 'chore(release): publish %s'",
