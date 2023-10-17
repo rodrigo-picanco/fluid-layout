@@ -27,7 +27,7 @@
     "react-docgen-typescript-loader": "^3.7.2",
     "rollup": "^2.7.2",
     "rollup-plugin-typescript2": "^0.27.0",
-    "storybook": "^6.5.16",
+    "storybook": "^7.4.6",
     "styled-tools": "^1.7.2",
     "ts-loader": "^8.0.1",
     "typescript": "^3.9.7"
